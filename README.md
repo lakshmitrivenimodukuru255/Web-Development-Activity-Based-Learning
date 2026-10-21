@@ -1,24 +1,18 @@
 *Name*: Lakshmi Triveni.Modukuru
 
 &nbsp;
-
 *Roll No*:26000255
 
 &nbsp;
-
 *Branch*: CSE
 
 &nbsp;
-
 *Section*: 4
 
 &nbsp;
-
-
 ##*Selected 3 Case Studies*:
 
-&emsp;
-
+&nbsp;
   *1.Bus and Train Ticket Booking Interface*
   &nbsp;
   *2.College Information and Admissions Website*
@@ -26,7 +20,7 @@
   *3.Hotel Reservation Website Interface*
   &nbsp;
 
-#*Repository Contents*
+#*Repository Contents*:
 
 &nbsp;
   *.Designed 3 Case Studies-- Webpage codes*

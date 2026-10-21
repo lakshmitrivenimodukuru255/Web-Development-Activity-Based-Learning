@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Booking</title>
+  <style>
+    body {
+         font-family: Arial;
+          margin: 20px; 
+          background: #f5f5f5; }
+
+    h2 {
+         color: #2c3e50;
+          border-bottom: 2px solid #2c3e50; }
+
+    .box {
+         background: rgb(231, 198, 198);
+          padding: 15px;
+           margin-bottom: 20px;
+            border: 1px solid #ccc;
+             border-radius: 5px; }
+
+    input, select { 
+        padding: 8px;
+        margin: 5px 0 15px 0;
+         width: 100%;
+          box-sizing: border-box; }
+    
+    .card { 
+        border: 1px solid #ddd;
+        padding: 10px; 
+        margin: 5px;
+        width: 200px; 
+        display: inline-block;
+        background: #fafafa; }
+    
+    table { 
+        width: 100%;
+        border:solid 2px #141411;}
+
+    th, td {
+         border: 1px solid #ccc;
+          padding: 8px;
+           text-align: left; 
+        }
+
+    th { 
+        background: #2c3e50;
+         color: white; }
+
+    .seat-grid {
+         display: grid;
+          gap: 10px; }
+
+    .seat {
+         background: #27ae60;
+          color: white; 
+          padding: 10px;
+           text-align: center;
+            border-radius: 4px; }
+    .booked {
+         background: #e74c3c;
+         }
+
+    button {
+         background: #27ae60;
+          color: rgb(211, 14, 14);
+           padding: 10px 15px;
+             font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1><center>Travel Booking</center></h1>
+
+  
+  <div class="box">
+    <h2>Search Journey</h2>
+    <label>From:</label>
+    <input type="text" placeholder="Enter Departure city">
+
+    <label>To:</label>
+    <input type="text" placeholder="Enter Arrival city">
+
+    <label>Date:</label>
+    <input type="date">
+  </div>
+
+  
+  <div class="box">
+    <h2>Available Services</h2>
+    <div class="card">
+      <h3>Express Bus</h3>
+      <p>Time: 08:00 AM</p>
+      <p><b>Fare: Rs.2000</b></p>
+    </div>
+    <div class="card">
+      <h3>Fast Train</h3>
+      <p>Time: 01:00 PM</p>
+      <p><b>Fare: Rs.3500</b></p>
+    </div>
+    <div class="card">
+      <h3>Direct Flight</h3>
+      <p>Time: 06:00 PM</p>
+      <p><b>Fare: Rs.5000</b></p>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <h2>Fare Information</h2>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Class</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Bus</td>
+        <td>Standard</td>
+        <td>Rs.2000</td>
+      </tr>
+      <tr>
+        <td>Train</td>
+        <td>AC Sleeper</td>
+        <td>Rs.3500</td>
+      </tr>
+      <tr>
+        <td>Flight</td>
+        <td>Economy</td>
+        <td>Rs.5000</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Seat Selection</h2>
+    <p>Green = Free | Red = Booked</p>
+    <div class="seat-grid">
+      <div class="seat booked">A1</div>
+      <div class="seat">A2</div>
+      <div class="seat">A3</div>
+      <div class="seat booked">A4</div>
+      <div class="seat">B1</div>
+      <div class="seat">B2</div>
+      <div class="seat booked">B3</div>
+      <div class="seat">B4</div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h2>Passenger Details</h2>
+    <form>
+      <label>Passenger Name:</label>
+      <input type="text" placeholder="Name" required>
+
+      <label>Age:</label>
+      <input type="number" placeholder="Age" required>
+
+      <label>Gender:</label>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
